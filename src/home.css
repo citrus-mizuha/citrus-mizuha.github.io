@@ -10,6 +10,10 @@ header p {
     margin-top: 0px !important;
 }
 
+img.avatar{
+    margin: 0px;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -77,8 +81,9 @@ header p {
 
 .sns-links {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 20px;
+    margin-left: 5px;
 }
 
 .sns-links a {
@@ -122,4 +127,11 @@ footer {
     color: #ffffff;
     background-color: #f582ae;
     transform: scale(1.1);
+}
+
+p#license {
+    font-size: small;
+    margin: 0px;
+    text-align: left;
+    padding-left: 20px;
 }
