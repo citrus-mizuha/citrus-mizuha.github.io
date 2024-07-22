@@ -121,6 +121,7 @@ footer {
     padding: 5px 10px;
     border-radius: 5px;
     background-color: #ffffff;
+    margin: 0px 5px;
 }
 
 .card a:hover {
