@@ -6,22 +6,25 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header p {
     margin-top: 0px !important;
 }
 
-img.avatar{
+img.avatar {
     margin: 0px;
 }
 
-.twitter-tweet{
+.twitter-tweet {
     padding-top: 12px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 12px;
 }
-
-
+div.container{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
 .container {
     width: 80%;
     margin: auto;
@@ -72,13 +75,13 @@ header p {
     margin: 10px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card h2 {
@@ -138,9 +141,88 @@ footer {
     transform: scale(1.1);
 }
 
+a#green-flow{
+    margin: 0 0px;
+    color: #7aaf52;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 0px 5px;
+
+}
+
+a#green-flow:hover{
+    color: #ffffff;
+    background-color: #59bb0c;
+    transform: scale(1.1);
+}
+
+a#python{
+    margin: 0 0px;
+    color: #1ca8b8;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    padding-right: 5px !important;
+    border-radius: 5px;
+    background-color: #ffffffce;
+    margin: 0px 5px;
+}
+a#python:hover{
+    color: #1ca8b8;
+    background-color: #e4e6c0;
+    transform: scale(1.1);
+}
+
+a#comingsoon_link{
+    margin: 0 0px;
+    color: #9f9f9fce;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    padding-right: 5px !important;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0px 5px;
+}
+
+a#comingsoon_link:hover{
+    color: #ffffff;
+    background-color: #9f9f9fce;
+    transform: scale(1.1);
+}
+
 p#license {
     font-size: small;
     margin: 0px;
     text-align: left;
     padding-left: 20px;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: #f582ae;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+#err{
+    all: initial !important;
+}
+
