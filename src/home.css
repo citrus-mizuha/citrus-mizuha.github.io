@@ -1,3 +1,4 @@
+/* 既存のCSSスタイル */
 body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     background-color: #fef6e4;
@@ -93,6 +94,7 @@ header p {
 .sns-links {
     display: flex;
     justify-content: left;
+    flex-wrap: wrap; /* 追加: フレックスアイテムが折り返すように */
     margin-top: 20px;
     margin-left: 5px;
 }
@@ -226,3 +228,10 @@ ul li a:hover {
     all: initial !important;
 }
 
+/* 追加: スマホ用のメディアクエリ */
+@media (max-width: 600px) {
+    .sns-links a {
+        flex: 1 1 45%; /* 幅を45%にして2列に分ける */
+        margin: 5px;
+    }
+}
