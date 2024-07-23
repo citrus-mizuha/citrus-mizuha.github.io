@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   $(window).on('load',function(){
-    $("#splash").delay(2600).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    $("#splash_logo").delay(2200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+    $("#splash").delay(3000).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+    $("#splash_logo").delay(2600).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
   });
