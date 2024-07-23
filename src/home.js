@@ -1,35 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ページ読み込み時のアニメーション
-    document.body.style.opacity = 0;
-    let opacity = 0;
-    let intervalID = setInterval(function() {
-        if (opacity < 1) {
-            opacity = opacity + 0.1;
-            document.body.style.opacity = opacity;
-        } else {
-            clearInterval(intervalID);
-        }
-    }, 50);
-
-    // カードのホバーエフェクトを強化
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        card.addEventListener('mouseover', function() {
-            this.style.boxShadow = '0 8px 16px rgba(0,0,0,0.2)';
-        });
-        card.addEventListener('mouseout', function() {
-            this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-        });
-    });
-
-    // SNSリンクのホバーエフェクトを強化
-    const snsLinks = document.querySelectorAll('.sns-links a');
-    snsLinks.forEach(link => {
-        link.addEventListener('mouseover', function() {
-            this.style.transform = 'scale(1.1)';
-        });
-        link.addEventListener('mouseout', function() {
-            this.style.transform = 'scale(1)';
-        });
-    });
-});
+    const svg = document.getElementById('handwriting-svg');
+    const grayBack = document.createElement('div');
+    grayBack.classList.add('gray-back');
+    document.body.appendChild(grayBack);
+  
+    // SVGのフェードイン
+    svg.style.opacity = 1;
+  
+    // グレーバックのフェードインと再生後のフェードアウト
+    setTimeout(() => {
+      grayBack.classList.add('visible');
+      // アニメーションが完了した後にグレーバックを非表示にする
+      setTimeout(() => {
+        grayBack.classList.remove('visible');
+      }, 3000); // グレーバックの表示時間
+    }, 1000); // SVGのフェードイン時間
+  });
+  
+  $(window).on('load',function(){
+    $("#splash").delay(2600).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+    $("#splash_logo").delay(2200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+  });
